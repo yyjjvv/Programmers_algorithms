@@ -7,5 +7,5 @@ function solution(n) {
     while(factorial(x) <= n){
         x++
     }
-    return x - 1
+    return x - 1;
 }
