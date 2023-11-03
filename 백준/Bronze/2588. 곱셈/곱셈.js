@@ -5,7 +5,7 @@ let b = input[1].split('');
 let multiplyFirstDigit = a * Number(b[2]);
 let multiplySecondDigit = a * Number(b[1]);
 let multiplyThirdDigit = a * Number(b[0]);
-let result = multiplyFirstDigit + (multiplySecondDigit * 10) + (multiplyThirdDigit * 100);
+let result = a * Number(input[1]);
 console.log(multiplyFirstDigit)
 console.log(multiplySecondDigit)
 console.log(multiplyThirdDigit)
