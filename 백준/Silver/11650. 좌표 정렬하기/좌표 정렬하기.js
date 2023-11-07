@@ -9,11 +9,11 @@ for (let i = 1; i <= n; i++) {
 }
 
 function compare (a, b) {
-    if (a[0] != b[0]) return a[0] - b[0]; // x 좌표 기준 오름차순
-    else return a[1] - b[1]; // x가 같으면 y 좌표 기준 오름차순
+    if (a[0] != b[0]) return a[0] - b[0];
+    else return a[1] - b[1];
 }
-newArr.sort(compare); // 정렬 수행
-let answer = ""; // 정렬 결과 출력
+newArr.sort(compare);
+let answer = "";
 for (let point of newArr) {
     answer += point[0] + " " + point[1] + "\n";
 }
