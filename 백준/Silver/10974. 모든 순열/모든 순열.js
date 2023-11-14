@@ -5,8 +5,8 @@ let visited = new Array(N).fill();
 let pool = [];
 let answer ='';
 
-const recursive = (deps) => {
-  if(deps === N){
+const recursive = () => {
+  if(pool.length === N){
     answer += pool.join(' ') + '\n';
     return;
   }
@@ -14,11 +14,11 @@ const recursive = (deps) => {
     if(!visited[i]){
       visited[i] = true;
       pool.push(i + 1);
-      recursive(deps + 1)
+      recursive();
       visited[i] = false;
       pool.pop();
     }
   }
 }
-recursive(0)
+recursive()
 console.log(answer)
